@@ -1,0 +1,10 @@
+indentation: 4
+haddock-style: single-line
+haddock-style-module: single-line
+comma-style: leading
+record-brace-space: true
+fixities: # Override fixities of operators.
+  # Fourmolu incorrectly determines the fixity of operators re-exported in Lens.Micro.Platform.
+  # We make explicit those that are in Lens.Micro.Mtl, since it does not seem sufficient to
+  # use a reexport directive.
+  - infixl 1 &
