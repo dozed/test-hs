@@ -1,0 +1,16 @@
+cabal-version:      3.0
+name:               test-hs
+version:            0.1.0.0
+license:            MIT
+build-type:         Simple
+
+common warnings
+    ghc-options: -Wall
+
+executable test-hs
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.19.1.0
+                    , lens
+    hs-source-dirs:   app
+    default-language: GHC2021

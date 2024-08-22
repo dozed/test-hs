@@ -1,0 +1,7 @@
+dist-newstyle
+.ghc.environment.*
+doc
+*.prof
+
+.idea
+*.iml
